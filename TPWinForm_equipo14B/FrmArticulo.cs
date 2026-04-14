@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace TPWinForm_equipo14B
+{
+    public partial class FrmArticulo : Form
+    {
+        public FrmArticulo()
+        {
+            InitializeComponent();
+        }
+
+        private void FrmArticulo_Load(object sender, EventArgs e)
+        {
+            cboMarca.Items.Add("marca 1");
+            cboMarca.Items.Add("marca 2");
+            cboMarca.Items.Add("marca 3");
+            cboMarca.Items.Add("marca 4");
+            cboMarca.Items.Add("marca 5");
+            cboCategoria.Items.Add("Categoria 1");
+            cboCategoria.Items.Add("Categoria 2");
+            cboCategoria.Items.Add("Categoria 3");
+            cboCategoria.Items.Add("Categoria 4");
+            cboCategoria.Items.Add("Categoria 5");
+        }
+    }
+}
