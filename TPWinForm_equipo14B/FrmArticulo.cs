@@ -30,5 +30,20 @@ namespace TPWinForm_equipo14B
             cboCategoria.Items.Add("Categoria 4");
             cboCategoria.Items.Add("Categoria 5");
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtboxCodArt.Clear();
+            txtboxDescripcion.Clear();
+            txtboxNombre.Clear();
+            txtboxPrecio.Clear();
+            cboCategoria.SelectedIndex = -1;
+            cboMarca.SelectedIndex = -1;
+        }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

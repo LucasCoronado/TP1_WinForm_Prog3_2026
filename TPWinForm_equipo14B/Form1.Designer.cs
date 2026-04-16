@@ -41,6 +41,7 @@
             lbAgregarArt = new Label();
             lbElimArt = new Label();
             lbListArt = new Label();
+            btnCerrar = new Button();
             SuspendLayout();
             // 
             // lbGestionArt
@@ -191,12 +192,24 @@
             lbListArt.Text = "Listado de Artículos";
             lbListArt.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // btnCerrar
+            // 
+            btnCerrar.Font = new Font("Roboto Light", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCerrar.Location = new Point(703, 404);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(75, 34);
+            btnCerrar.TabIndex = 13;
+            btnCerrar.Text = "Cerrar";
+            btnCerrar.UseVisualStyleBackColor = true;
+            btnCerrar.Click += btnCerrar_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.InactiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnCerrar);
             Controls.Add(lbListArt);
             Controls.Add(lbElimArt);
             Controls.Add(lbAgregarArt);
@@ -213,7 +226,7 @@
             MaximumSize = new Size(816, 489);
             MinimumSize = new Size(816, 489);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Gestión de Artículos";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -233,5 +246,6 @@
         private Label lbAgregarArt;
         private Label lbElimArt;
         private Label lbListArt;
+        private Button btnCerrar;
     }
 }

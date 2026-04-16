@@ -58,7 +58,7 @@
             // txtboxPrecio
             // 
             txtboxPrecio.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            txtboxPrecio.Location = new Point(424, 254);
+            txtboxPrecio.Location = new Point(424, 262);
             txtboxPrecio.Name = "txtboxPrecio";
             txtboxPrecio.Size = new Size(100, 23);
             txtboxPrecio.TabIndex = 6;
@@ -82,51 +82,57 @@
             // lbCodArt
             // 
             lbCodArt.AutoSize = true;
+            lbCodArt.Font = new Font("Roboto Light", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbCodArt.Location = new Point(258, 83);
             lbCodArt.Name = "lbCodArt";
-            lbCodArt.Size = new Size(105, 15);
+            lbCodArt.Size = new Size(109, 18);
             lbCodArt.TabIndex = 7;
             lbCodArt.Text = "Código de articulo";
             // 
             // lbPrecio
             // 
             lbPrecio.AutoSize = true;
-            lbPrecio.Location = new Point(258, 257);
+            lbPrecio.Font = new Font("Roboto Light", 9.75F);
+            lbPrecio.Location = new Point(258, 260);
             lbPrecio.Name = "lbPrecio";
-            lbPrecio.Size = new Size(40, 15);
+            lbPrecio.Size = new Size(44, 18);
             lbPrecio.TabIndex = 10;
             lbPrecio.Text = "Precio";
             // 
             // lbMarca
             // 
             lbMarca.AutoSize = true;
+            lbMarca.Font = new Font("Roboto Light", 9.75F);
             lbMarca.Location = new Point(258, 170);
             lbMarca.Name = "lbMarca";
-            lbMarca.Size = new Size(40, 15);
+            lbMarca.Size = new Size(44, 18);
             lbMarca.TabIndex = 11;
             lbMarca.Text = "Marca";
             // 
             // lbDescripcion
             // 
             lbDescripcion.AutoSize = true;
+            lbDescripcion.Font = new Font("Roboto Light", 9.75F);
             lbDescripcion.Location = new Point(258, 141);
             lbDescripcion.Name = "lbDescripcion";
-            lbDescripcion.Size = new Size(69, 15);
+            lbDescripcion.Size = new Size(76, 18);
             lbDescripcion.TabIndex = 12;
             lbDescripcion.Text = "Descripción";
             // 
             // lbNombre
             // 
             lbNombre.AutoSize = true;
+            lbNombre.Font = new Font("Roboto Light", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbNombre.Location = new Point(258, 112);
             lbNombre.Name = "lbNombre";
-            lbNombre.Size = new Size(51, 15);
+            lbNombre.Size = new Size(54, 18);
             lbNombre.TabIndex = 13;
             lbNombre.Text = "Nombre";
             // 
             // cboMarca
             // 
             cboMarca.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            cboMarca.DropDownStyle = ComboBoxStyle.DropDownList;
             cboMarca.FormattingEnabled = true;
             cboMarca.Location = new Point(423, 167);
             cboMarca.Name = "cboMarca";
@@ -136,6 +142,7 @@
             // cboCategoria
             // 
             cboCategoria.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            cboCategoria.DropDownStyle = ComboBoxStyle.DropDownList;
             cboCategoria.FormattingEnabled = true;
             cboCategoria.Location = new Point(424, 196);
             cboCategoria.Name = "cboCategoria";
@@ -145,54 +152,62 @@
             // lblCategoria
             // 
             lblCategoria.AutoSize = true;
+            lblCategoria.Font = new Font("Roboto Light", 9.75F);
             lblCategoria.Location = new Point(257, 199);
             lblCategoria.Name = "lblCategoria";
-            lblCategoria.Size = new Size(58, 15);
+            lblCategoria.Size = new Size(62, 18);
             lblCategoria.TabIndex = 16;
             lblCategoria.Text = "Categoria";
             // 
             // lblImagen
             // 
             lblImagen.AutoSize = true;
-            lblImagen.Location = new Point(257, 228);
+            lblImagen.Font = new Font("Roboto Light", 9.75F);
+            lblImagen.Location = new Point(257, 231);
             lblImagen.Name = "lblImagen";
-            lblImagen.Size = new Size(47, 15);
+            lblImagen.Size = new Size(52, 18);
             lblImagen.TabIndex = 17;
             lblImagen.Text = "Imagen";
             // 
             // btnAgregar
             // 
+            btnAgregar.Font = new Font("Roboto Light", 9.75F);
             btnAgregar.Location = new Point(258, 340);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(75, 23);
+            btnAgregar.Size = new Size(75, 30);
             btnAgregar.TabIndex = 7;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
             // 
             // btnLimpiar
             // 
+            btnLimpiar.Font = new Font("Roboto Light", 9.75F);
             btnLimpiar.Location = new Point(390, 340);
             btnLimpiar.Name = "btnLimpiar";
-            btnLimpiar.Size = new Size(75, 23);
+            btnLimpiar.Size = new Size(75, 30);
             btnLimpiar.TabIndex = 8;
             btnLimpiar.Text = "Limpiar";
             btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // btnsalir
             // 
+            btnsalir.Font = new Font("Roboto Light", 9.75F);
             btnsalir.Location = new Point(524, 340);
             btnsalir.Name = "btnsalir";
-            btnsalir.Size = new Size(75, 23);
+            btnsalir.Size = new Size(75, 30);
             btnsalir.TabIndex = 9;
             btnsalir.Text = "Salir";
             btnsalir.UseVisualStyleBackColor = true;
+            btnsalir.Click += btnsalir_Click;
             // 
             // btnExaminar
             // 
             btnExaminar.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            btnExaminar.Font = new Font("Roboto Light", 9.75F);
             btnExaminar.Location = new Point(423, 225);
             btnExaminar.Name = "btnExaminar";
-            btnExaminar.Size = new Size(101, 23);
+            btnExaminar.Size = new Size(101, 30);
             btnExaminar.TabIndex = 5;
             btnExaminar.Text = "Examinar";
             btnExaminar.UseVisualStyleBackColor = true;
@@ -222,7 +237,7 @@
             Controls.Add(txtboxCodArt);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "FrmArticulo";
-            Text = "FrmArticulo";
+            Text = "Agregar artículo";
             Load += FrmArticulo_Load;
             ResumeLayout(false);
             PerformLayout();

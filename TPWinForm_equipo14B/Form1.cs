@@ -12,5 +12,10 @@ namespace TPWinForm_equipo14B
             FrmArticulo articulo = new FrmArticulo();
             articulo.ShowDialog();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
