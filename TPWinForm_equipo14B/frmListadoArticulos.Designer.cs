@@ -37,6 +37,7 @@
             dgvListado.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvListado.Location = new Point(1, -1);
             dgvListado.Name = "dgvListado";
+            dgvListado.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvListado.Size = new Size(729, 195);
             dgvListado.TabIndex = 0;
             // 
