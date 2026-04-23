@@ -25,11 +25,20 @@ namespace Negocio
             conexion = new SqlConnection(cadenaConexion);
             comando = new SqlCommand();
         }
+        //agrego para setear los parametros
+        public void SetearParametro(string nombre, object valor)
+        {
+            comando.Parameters.AddWithValue(nombre, valor);
+        }
 
         public void SetearConsulta(string consulta)
         {
             comando.CommandType = System.Data.CommandType.Text;
             comando.CommandText = consulta;
+            
+            //agrego un clear para limpiarle los parametros 
+            comando.Parameters.Clear();
+
         }
 
         public void ejecutarLectura()

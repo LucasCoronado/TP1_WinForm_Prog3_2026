@@ -178,6 +178,7 @@
             btnAgregar.TabIndex = 7;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // btnLimpiar
             // 

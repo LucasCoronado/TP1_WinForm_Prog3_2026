@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="frmEliminarArticulo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Dominio\Dominio.csproj" />
     <ProjectReference Include="..\Negocio\Negocio.csproj" />
   </ItemGroup>

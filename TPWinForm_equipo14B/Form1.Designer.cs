@@ -109,6 +109,7 @@
             btnEliminarArt.Size = new Size(130, 90);
             btnEliminarArt.TabIndex = 5;
             btnEliminarArt.UseVisualStyleBackColor = true;
+            btnEliminarArt.Click += btnEliminarArt_Click;
             // 
             // btnDetalleArt
             // 

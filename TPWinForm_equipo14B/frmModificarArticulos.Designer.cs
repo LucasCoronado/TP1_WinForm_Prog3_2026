@@ -61,6 +61,7 @@
             Controls.Add(btnModificar);
             Name = "frmModificarArticulos";
             Text = "Modificar articulos";
+            Load += frmModificarArticulos_Load;
             ((System.ComponentModel.ISupportInitialize)dgv).EndInit();
             ResumeLayout(false);
         }

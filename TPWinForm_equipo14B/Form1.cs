@@ -32,5 +32,11 @@ namespace TPWinForm_equipo14B
             listadoArticulo.ShowDialog();
 
         }
+
+        private void btnEliminarArt_Click(object sender, EventArgs e)
+        {
+            frmEliminarArticulos ventana = new frmEliminarArticulos();
+            ventana.ShowDialog();
+        }
     }
 }
