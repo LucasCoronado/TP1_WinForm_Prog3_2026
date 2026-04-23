@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dominio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,16 @@ namespace TPWinForm_equipo14B
 {
     public partial class FrmArticulo : Form
     {
+        private Articulo articulo = null;
         public FrmArticulo()
         {
             InitializeComponent();
+        }
+
+        public FrmArticulo(Articulo art)
+        {
+            InitializeComponent();
+            this.articulo = art;
         }
 
         private void FrmArticulo_Load(object sender, EventArgs e)

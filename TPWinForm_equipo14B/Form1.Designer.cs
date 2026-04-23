@@ -98,6 +98,7 @@
             btnModifArt.Size = new Size(130, 90);
             btnModifArt.TabIndex = 4;
             btnModifArt.UseVisualStyleBackColor = true;
+            btnModifArt.Click += btnModifArt_Click;
             // 
             // btnEliminarArt
             // 

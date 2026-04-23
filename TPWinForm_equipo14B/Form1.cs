@@ -1,3 +1,5 @@
+using Dominio;
+
 namespace TPWinForm_equipo14B
 {
     public partial class Form1 : Form
@@ -22,6 +24,13 @@ namespace TPWinForm_equipo14B
         {
             frmListadoArticulos listadoArticulo = new frmListadoArticulos();
             listadoArticulo.ShowDialog();
+        }
+
+        private void btnModifArt_Click(object sender, EventArgs e)
+        {
+            frmModificarArticulos listadoArticulo = new frmModificarArticulos();
+            listadoArticulo.ShowDialog();
+
         }
     }
 }
