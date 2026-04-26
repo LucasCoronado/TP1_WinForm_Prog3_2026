@@ -44,13 +44,13 @@
             btnAgregar = new Button();
             btnLimpiar = new Button();
             btnsalir = new Button();
-            btnExaminar = new Button();
+            btnImagenes = new Button();
             SuspendLayout();
             // 
             // txtboxCodArt
             // 
             txtboxCodArt.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            txtboxCodArt.Location = new Point(424, 80);
+            txtboxCodArt.Location = new Point(423, 80);
             txtboxCodArt.Name = "txtboxCodArt";
             txtboxCodArt.Size = new Size(100, 23);
             txtboxCodArt.TabIndex = 0;
@@ -58,15 +58,17 @@
             // txtboxPrecio
             // 
             txtboxPrecio.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            txtboxPrecio.Location = new Point(424, 262);
+            txtboxPrecio.Location = new Point(423, 225);
             txtboxPrecio.Name = "txtboxPrecio";
             txtboxPrecio.Size = new Size(100, 23);
             txtboxPrecio.TabIndex = 6;
+            txtboxPrecio.KeyPress += txtboxPrecio_KeyPress;
+            txtboxPrecio.Validating += txtboxPrecio_Validating;
             // 
             // txtboxDescripcion
             // 
             txtboxDescripcion.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            txtboxDescripcion.Location = new Point(424, 138);
+            txtboxDescripcion.Location = new Point(423, 138);
             txtboxDescripcion.Name = "txtboxDescripcion";
             txtboxDescripcion.Size = new Size(100, 23);
             txtboxDescripcion.TabIndex = 2;
@@ -74,7 +76,7 @@
             // txtboxNombre
             // 
             txtboxNombre.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            txtboxNombre.Location = new Point(424, 109);
+            txtboxNombre.Location = new Point(423, 109);
             txtboxNombre.Name = "txtboxNombre";
             txtboxNombre.Size = new Size(100, 23);
             txtboxNombre.TabIndex = 1;
@@ -93,7 +95,7 @@
             // 
             lbPrecio.AutoSize = true;
             lbPrecio.Font = new Font("Microsoft Sans Serif", 9.75F);
-            lbPrecio.Location = new Point(258, 260);
+            lbPrecio.Location = new Point(258, 225);
             lbPrecio.Name = "lbPrecio";
             lbPrecio.Size = new Size(46, 16);
             lbPrecio.TabIndex = 10;
@@ -144,7 +146,7 @@
             cboCategoria.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             cboCategoria.DropDownStyle = ComboBoxStyle.DropDownList;
             cboCategoria.FormattingEnabled = true;
-            cboCategoria.Location = new Point(424, 196);
+            cboCategoria.Location = new Point(423, 196);
             cboCategoria.Name = "cboCategoria";
             cboCategoria.Size = new Size(100, 23);
             cboCategoria.TabIndex = 4;
@@ -163,7 +165,7 @@
             // 
             lblImagen.AutoSize = true;
             lblImagen.Font = new Font("Microsoft Sans Serif", 9.75F);
-            lblImagen.Location = new Point(257, 231);
+            lblImagen.Location = new Point(257, 260);
             lblImagen.Name = "lblImagen";
             lblImagen.Size = new Size(52, 16);
             lblImagen.TabIndex = 17;
@@ -202,16 +204,16 @@
             btnsalir.UseVisualStyleBackColor = true;
             btnsalir.Click += btnsalir_Click;
             // 
-            // btnExaminar
+            // btnImagenes
             // 
-            btnExaminar.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            btnExaminar.Font = new Font("Microsoft Sans Serif", 9.75F);
-            btnExaminar.Location = new Point(423, 225);
-            btnExaminar.Name = "btnExaminar";
-            btnExaminar.Size = new Size(101, 30);
-            btnExaminar.TabIndex = 5;
-            btnExaminar.Text = "Examinar";
-            btnExaminar.UseVisualStyleBackColor = true;
+            btnImagenes.Font = new Font("Microsoft Sans Serif", 9.75F);
+            btnImagenes.Location = new Point(423, 254);
+            btnImagenes.Name = "btnImagenes";
+            btnImagenes.Size = new Size(100, 53);
+            btnImagenes.TabIndex = 18;
+            btnImagenes.Text = "Gestion de Imagenes";
+            btnImagenes.UseVisualStyleBackColor = true;
+            btnImagenes.Click += btnImagenes_Click;
             // 
             // FrmArticulo
             // 
@@ -219,7 +221,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.InactiveCaption;
             ClientSize = new Size(800, 450);
-            Controls.Add(btnExaminar);
+            Controls.Add(btnImagenes);
             Controls.Add(btnsalir);
             Controls.Add(btnLimpiar);
             Controls.Add(btnAgregar);
@@ -265,6 +267,6 @@
         private Button btnAgregar;
         private Button btnLimpiar;
         private Button btnsalir;
-        private Button btnExaminar;
+        private Button btnImagenes;
     }
 }

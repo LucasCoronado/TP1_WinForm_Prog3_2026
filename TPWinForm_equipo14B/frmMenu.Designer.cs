@@ -1,6 +1,6 @@
 ﻿namespace TPWinForm_equipo14B
 {
-    partial class Form1
+    partial class frmMenu
     {
         /// <summary>
         ///  Required designer variable.
@@ -257,7 +257,7 @@
             btnCategorias.UseVisualStyleBackColor = true;
             btnCategorias.Click += btnCategorias_Click;
             // 
-            // Form1
+            // frmMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -283,7 +283,7 @@
             Controls.Add(lbGestionArt);
             MaximumSize = new Size(816, 489);
             MinimumSize = new Size(816, 489);
-            Name = "Form1";
+            Name = "frmMenu";
             Text = "Gestión de Artículos";
             ResumeLayout(false);
             PerformLayout();
